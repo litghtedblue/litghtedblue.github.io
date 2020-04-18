@@ -73,7 +73,8 @@ deeplIframeTag.onload=function(){
 	let textInput=document.querySelector("#reactyoutube input[type=text]")
 	textInput.focus()
 	textInput.blur();
-  window.scrollTo(0, 0);
+	window.scrollTo(0, 0);
+	document.querySelector("div.frame").scrollTop=0
 }
 
 let deeplTarget=document.querySelector(".gp-footer")
