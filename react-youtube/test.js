@@ -70,10 +70,13 @@ reactscriptCss.href = "https://litghtedblue.github.io/react-youtube/static/css/m
 reactscriptCss.rel = "stylesheet"
 document.body.appendChild(reactscriptCss);
 
-let reactscript1 = document.createElement("script");
-reactscript1.src = "https://litghtedblue.github.io/react-youtube/static/js/2.b0db29c0.chunk.js";
-document.body.appendChild(reactscript1);
-let reactscript2 = document.createElement("script");
-reactscript2.src = "https://litghtedblue.github.io/react-youtube/static/js/main.f23140d0.chunk.js";
-document.body.appendChild(reactscript2);
+setTimeout(()=>{
+	let reactscript1 = document.createElement("script");
+	reactscript1.src = "https://litghtedblue.github.io/react-youtube/static/js/2.b0db29c0.chunk.js";
+	document.body.appendChild(reactscript1);
+	let reactscript2 = document.createElement("script");
+	reactscript2.src = "https://litghtedblue.github.io/react-youtube/static/js/main.f23140d0.chunk.js";
+	document.body.appendChild(reactscript2);
+},1000)
+
 
