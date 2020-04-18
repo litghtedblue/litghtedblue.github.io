@@ -85,7 +85,7 @@ if(deeplTarget!=null){
 let reactscriptCss = document.createElement("link");
 let commoncs="main.5f361e03.chunk.css"
 let commonjs="2.b0db29c0.chunk.js"
-let mainjs="main.d6b136d0.chunk.js"
+let mainjs="main.775be225.chunk.js"
 
 reactscriptCss.href = "https://litghtedblue.github.io/react-youtube/static/css/"+commoncs;
 reactscriptCss.rel = "stylesheet"
