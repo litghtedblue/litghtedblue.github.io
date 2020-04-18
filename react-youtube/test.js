@@ -34,8 +34,8 @@ function onYouTubeIframeAPIReady() {
 				[temp[0]]: temp[1]
 			}
 		})
-		if (params.url) {
-			videoId = params.url.replace(/.*%3D/g, '');
+		if (params.reactyoutube) {
+			videoId = params.reactyoutube.replace(/.*%3D/g, '');
 		}
 	}
 	player = new YT.Player('youtubeplayer', {
