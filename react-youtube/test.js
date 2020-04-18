@@ -69,6 +69,13 @@ deeplIframeTag.title="deepl"
 deeplIframeTag.src="https://www.deepl.com/ja/translator"
 deeplIframeTag.width=1000
 deeplIframeTag.height=500
+deeplIframeTag.onload=function(){
+	let textInput=document.querySelector("#reactyoutube input[type=text]")
+	textInput.focus()
+	textInput.blur();
+  window.scrollTo(0, 0);
+}
+
 let deeplTarget=document.querySelector(".gp-footer")
 if(deeplTarget!=null){
   deeplTarget.parentNode.insertBefore(deeplIframeTag, deeplTarget);
@@ -76,18 +83,18 @@ if(deeplTarget!=null){
 
 let reactscriptCss = document.createElement("link");
 let commoncs="main.5f361e03.chunk.css"
+let commonjs="2.b0db29c0.chunk.js"
+let mainjs="main.f26daadc.chunk.js"
+
 reactscriptCss.href = "https://litghtedblue.github.io/react-youtube/static/css/"+commoncs;
 reactscriptCss.rel = "stylesheet"
 document.body.appendChild(reactscriptCss);
-
 let reactscript1 = document.createElement("script");
 
-let commonjs="2.b0db29c0.chunk.js"
 reactscript1.src = "https://litghtedblue.github.io/react-youtube/static/js/"+commonjs;
 document.body.appendChild(reactscript1);
 let reactscript2 = document.createElement("script");
 
-let mainjs="main.88acb126.chunk.js"
 reactscript2.src = "https://litghtedblue.github.io/react-youtube/static/js/"+mainjs;
 document.body.appendChild(reactscript2);
 
