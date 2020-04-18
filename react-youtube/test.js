@@ -62,7 +62,7 @@ function onPlayerReady(event) {
 let reactyoutube = document.createElement("div");
 reactyoutube.id = "reactyoutube"
 let youtubeplayer=document.querySelector("#youtubeplayer")
-youtubeplayer.parentNode.insertAfter(reactyoutube, youtubeplayer);
+youtubeplayer.parentNode.insertBefore(reactyoutube, youtubeplayer.nextSibling);
 
 
 let reactscriptCss = document.createElement("link");
