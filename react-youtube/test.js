@@ -69,9 +69,10 @@ deeplIframeTag.title="deepl"
 deeplIframeTag.src="https://www.deepl.com/ja/translator"
 deeplIframeTag.width=1000
 deeplIframeTag.height=500
-let deeplTarget=document.querySelector("div.tlid-result-view.cllist.empty")
-deeplTarget.parentNode.insertBefore(deeplIframeTag, deeplTarget);
-
+let deeplTarget=document.querySelector(".gp-footer")
+if(deeplTarget==null){
+  deeplTarget.parentNode.insertBefore(deeplIframeTag, deeplTarget);
+}
 
 let reactscriptCss = document.createElement("link");
 reactscriptCss.href = "https://litghtedblue.github.io/react-youtube/static/css/main.5f361e03.chunk.css";
