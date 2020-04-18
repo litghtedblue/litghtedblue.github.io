@@ -1,20 +1,20 @@
 document.addEventListener('keydown', (event) => { if (event.key == "Escape") document.querySelector('#source').value = "" })
 
 
-var s = document.createElement("div");
+let s = document.createElement("div");
 s.id = "youtubeplayer"
-var container=document.querySelector("body > div.container")
+let container=document.querySelector("body > div.container")
 container.parentNode.insertBefore(s, container);
 
 
-var tag = document.createElement('script');
+let tag = document.createElement('script');
 tag.id="youtubescript"
 tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
+let firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 
-var player;
+let player;
 function onYouTubeIframeAPIReady() {
 	var videoId = 'M7lc1UVf-VE'
 	let urlParamStr = window.location.search
@@ -58,3 +58,22 @@ function onPlayerReady(event) {
 	console.log("onPlayerReady")
 	window['XXXXXREADY'] = true;
 }
+
+let reactyoutube = document.createElement("div");
+reactyoutube.id = "reactyoutube"
+let youtubeplayer=document.querySelector("#youtubeplayer")
+youtubeplayer.parentNode.insertAfter(reactyoutube, youtubeplayer);
+
+
+let reactscriptCss = document.createElement("link");
+reactscriptCss.href = "https://litghtedblue.github.io/react-youtube/static/css/main.5f361e03.chunk.css";
+reactscriptCss.rel = "stylesheet"
+document.body.appendChild(reactscriptCss);
+
+let reactscript1 = document.createElement("script");
+reactscript1.src = "https://litghtedblue.github.io/react-youtube/static/js/2.b0db29c0.chunk.js";
+document.body.appendChild(reactscript1);
+let reactscript2 = document.createElement("script");
+reactscript2.src = "https://litghtedblue.github.io/react-youtube/static/js/main.f23140d0.chunk.js";
+document.body.appendChild(reactscript2);
+
