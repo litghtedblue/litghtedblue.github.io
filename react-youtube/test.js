@@ -70,7 +70,7 @@ deeplIframeTag.src="https://www.deepl.com/ja/translator"
 deeplIframeTag.width=1000
 deeplIframeTag.height=500
 let deeplTarget=document.querySelector(".gp-footer")
-if(deeplTarget==null){
+if(deeplTarget!=null){
   deeplTarget.parentNode.insertBefore(deeplIframeTag, deeplTarget);
 }
 
