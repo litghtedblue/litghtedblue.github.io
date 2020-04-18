@@ -1,17 +1,17 @@
 document.addEventListener('keydown', (event) => { if (event.key == "Escape") document.querySelector('#source').value = "" })
 
 
-var firstScriptTag = document.getElementsByTagName('script')[0];
-
 var s = document.createElement("div");
 s.id = "youtubeplayer"
-firstScriptTag.parentNode.insertBefore(s, firstScriptTag);
+var container=document.querySelector("body > div.container")
+container.parentNode.insertBefore(s, container);
+
 
 var tag = document.createElement('script');
 tag.id="youtubescript"
 tag.src = "https://www.youtube.com/iframe_api";
-var container=document.querySelector("body > div.container")
-container.parentNode.insertBefore(tag, container);
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 
 var player;
