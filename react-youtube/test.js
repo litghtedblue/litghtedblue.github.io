@@ -4,13 +4,14 @@ document.addEventListener('keydown', (event) => { if (event.key == "Escape") doc
 var firstScriptTag = document.getElementsByTagName('script')[0];
 
 var s = document.createElement("div");
-s.id = "player"
+s.id = "youtubeplayer"
 firstScriptTag.parentNode.insertBefore(s, firstScriptTag);
 
 var tag = document.createElement('script');
 tag.id="youtubescript"
 tag.src = "https://www.youtube.com/iframe_api";
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+var container=document.querySelector("body > div.container")
+container.parentNode.insertBefore(tag, container);
 
 
 var player;
@@ -37,7 +38,7 @@ function onYouTubeIframeAPIReady() {
 			videoId = params.url.replace(/.*%3D/g, '');
 		}
 	}
-	player = new YT.Player('player', {
+	player = new YT.Player('youtubeplayer', {
 		height: '450',
 		width: '600',
 		videoId: videoId,
