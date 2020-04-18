@@ -83,11 +83,11 @@ if(deeplTarget!=null){
 }
 
 let reactscriptCss = document.createElement("link");
-let commoncs="main.5f361e03.chunk.css"
-let commonjs="2.b0db29c0.chunk.js"
+let commoncss="main.5f361e03.chunk.css"
+let commonjs="2.2d39b0ee.chunk.js"
 let mainjs="main.775be225.chunk.js"
 
-reactscriptCss.href = "https://litghtedblue.github.io/react-youtube/static/css/"+commoncs;
+reactscriptCss.href = "https://litghtedblue.github.io/react-youtube/static/css/"+commoncss;
 reactscriptCss.rel = "stylesheet"
 document.body.appendChild(reactscriptCss);
 let reactscript1 = document.createElement("script");
