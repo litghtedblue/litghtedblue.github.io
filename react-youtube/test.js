@@ -1,4 +1,4 @@
-document.addEventListener('keydown', (event) => { if (event.key == "Escape") document.querySelector('#source').value = "" })
+//document.addEventListener('keydown', (event) => { if (event.key == "Escape") document.querySelector('#source').value = "" })
 
 
 let s = document.createElement("div");
@@ -64,28 +64,27 @@ reactyoutube.id = "reactyoutube"
 let youtubeplayer = document.querySelector("#youtubeplayer")
 youtubeplayer.parentNode.insertBefore(reactyoutube, youtubeplayer.nextSibling);
 
-let deeplIframeTag = document.createElement("iframe")
-deeplIframeTag.title="deepl"
-deeplIframeTag.src="https://www.deepl.com/ja/translator"
-deeplIframeTag.width=1000
-deeplIframeTag.height=500
-deeplIframeTag.onload=function(){
-	let textInput=document.querySelector("#reactyoutube input[type=text]")
-	textInput.focus()
-	textInput.blur();
-	window.scrollTo(0, 0);
-	document.querySelector("div.frame").scrollTop=0
-}
-
-let deeplTarget=document.querySelector(".gp-footer")
-if(deeplTarget!=null){
-  deeplTarget.parentNode.insertBefore(deeplIframeTag, deeplTarget);
-}
+// let deeplIframeTag = document.createElement("iframe")
+// deeplIframeTag.title="deepl"
+// deeplIframeTag.src="https://www.deepl.com/ja/translator"
+// deeplIframeTag.width=1000
+// deeplIframeTag.height=500
+// deeplIframeTag.onload=function(){
+// 	let textInput=document.querySelector("#reactyoutube input[type=text]")
+// 	textInput.focus()
+// 	textInput.blur();
+// 	window.scrollTo(0, 0);
+// 	document.querySelector("div.frame").scrollTop=0
+// }
+// let deeplTarget=document.querySelector(".gp-footer")
+// if(deeplTarget!=null){
+//   deeplTarget.parentNode.insertBefore(deeplIframeTag, deeplTarget);
+// }
 
 let reactscriptCss = document.createElement("link");
 let commoncss="main.5f361e03.chunk.css"
 let commonjs="2.2d39b0ee.chunk.js"
-let mainjs="main.775be225.chunk.js"
+let mainjs="main.002fdcce.chunk.js"
 
 reactscriptCss.href = "https://litghtedblue.github.io/react-youtube/static/css/"+commoncss;
 reactscriptCss.rel = "stylesheet"
