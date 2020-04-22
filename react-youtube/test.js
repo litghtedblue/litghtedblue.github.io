@@ -54,7 +54,7 @@ function onPlayerReady(event) {
 		if (params.reactyoutubetime) {
 			try {
 				let startSecArray = params.reactyoutubetime.split('%3A')
-				startSeconds = startSecArray[0] * 60 + startSecArray[0]
+				startSeconds = startSecArray[0] * 60 + startSecArray[0].parseInt()
 			} catch (e) {
 				console.log(e)
 			}
