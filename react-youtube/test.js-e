@@ -23,13 +23,11 @@ function onYouTubeIframeAPIReady() {
 		//playerVars: { 'autoplay': 1 },
 		events: {
 			'onReady': onPlayerReady,
-			// 'onStateChange': onPlayerStateChange
 		}
 	});
 	window['XXXXX'] = player;
 }
 
-// 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
 	let videoId = 'M7lc1UVf-VE'
 	let urlParamStr = window.location.search
