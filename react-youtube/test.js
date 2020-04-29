@@ -90,7 +90,7 @@ youtubeplayer.parentNode.insertBefore(reactyoutube, youtubeplayer.nextSibling);
 let reactscriptCss = document.createElement("link");
 let commoncss = "main.5f361e03.chunk.css"
 let commonjs = "2.2d39b0ee.chunk.js"
-let mainjs = "main.cd94f770.chunk.js"
+let mainjs = "main.f34eddc5.chunk.js"
 
 reactscriptCss.href = "https://litghtedblue.github.io/react-youtube/static/css/" + commoncss;
 reactscriptCss.rel = "stylesheet"
