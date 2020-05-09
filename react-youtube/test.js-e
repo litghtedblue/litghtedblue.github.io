@@ -49,7 +49,10 @@ function onPlayerReady(event) {
 			}
 		})
 		if (params.reactyoutube) {
-			videoId = params.reactyoutube.replace(/.*%3D/g, '');
+			let vparam = params.reactyoutube.split(/%3F|%26/).find(param => param.startsWith('v%3D'));
+			if (vparam) {
+				videoId = vparam.replace(/^v%3D/g, '');
+			}
 		}
 		if (params.reactyoutubetime) {
 			try {
@@ -90,7 +93,7 @@ youtubeplayer.parentNode.insertBefore(reactyoutube, youtubeplayer.nextSibling);
 let reactscriptCss = document.createElement("link");
 let commoncss = "COMMON_CSS_REPLACE"
 let commonjs = "2.2d39b0ee.chunk.js"
-let mainjs = "main.7b8928c4.chunk.js"
+let mainjs = "main.675c98e0.chunk.js"
 
 reactscriptCss.href = "https://litghtedblue.github.io/react-youtube/static/css/" + commoncss;
 reactscriptCss.rel = "stylesheet"
